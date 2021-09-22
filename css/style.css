@@ -6,27 +6,35 @@
 
 main {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 960px;
+  padding: 0 16px;
 }
 
-h2, h3, p, button, li, label {
+h3, h4, p, button, li, label {
   font-family: 'Open Sans', sans-serif;
   line-height: 30px;
+  color: #222;
 }
 
 h1 {
-  font-family: 'Cabin', sans-serif;
-  font-size: 120px;
+  font-family: 'Cookie', cursive;
+  font-size: 160px;
   margin: 0;
+  color: #fff;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
 }
 
 h2 {
-  font-weight: 600;
-  font-size: 30px;
-  letter-spacing: -0.5px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 28px;
 }
 
 h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+h4 {
   font-weight: 400;
   font-size: 20px;
 }
@@ -43,13 +51,26 @@ a {
 
 ul {
   margin: 20px 0;
-  padding: 0 20px;
+  padding: 0;
 }
 
 li {
   margin: 20px 0;
   font-weight: 400;
   font-size: 18px;
+  list-style-type: '- ';
+}
+
+button {
+  transition: opacity 0.5s;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #eee;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 4px;
+  width: 200px;
 }
 
 .centered-content {
@@ -64,6 +85,17 @@ li {
   text-align: center;
   width: 100%;
   height: 100vh;
+
+  background-color: #BD3F32;
+  background-image:
+    linear-gradient(
+      to top right, 
+      #CB356B, #BD3F32
+    );
+}
+
+.home h3, .home h4, .home p {
+  color: #eee;
 }
 
 .home p {
@@ -74,6 +106,12 @@ li {
   margin: 100px 0;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .list-container-right {
   margin-left: 30px;
 }
@@ -82,13 +120,7 @@ li {
   margin-right: 30px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.col img {
+img {
   width: 500px;
 }
 
@@ -107,27 +139,45 @@ li {
 }
 
 .box p {
-  height: 150px;
+  padding: 10px;
   text-align: center;
   display: flex;
   align-items: center;
   font-size: 16px;
   flex-direction: column;
   font-weight: 500;
+  border-radius: 4px;
 }
 
 .box p strong {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: -20px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: 'Cookie', cursive;
+  background: -webkit-linear-gradient(#CB356B, #BD3F32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-form {
-  margin: 60px auto;
+span {
+  line-height: 25px;
+  margin-top: 10px;
 }
 
 .signup {
   text-align: center;
+}
+
+.signup p {
+  max-width: 500px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.signup .insta-handle {
+  font-size: 20px;
+  margin: 20px auto;
+  font-weight: bold;
 }
 
 .field {
@@ -145,10 +195,28 @@ input, select {
   padding: 5px;
   margin: 5px;
   width: 220px;
+  height: 40px;
+}
+
+form {
+  margin: 20px auto;
+}
+
+form button {
+  border: 1px solid #333;
+  color: #000;
+  width: 220px;
+  padding: 5px;
 }
 
 footer {
-  background: #000;
+  background-color: #BD3F32;
+  background-image:
+    linear-gradient(
+      to top right, 
+      #CB356B, #BD3F32
+    );
+  
   padding: 40px 30px;
   color: #fff;
   display: flex;
@@ -157,10 +225,90 @@ footer {
 
 footer h3 {
   margin: 0;
-  font-family: 'Cabin', sans-serif;
-  font-size: 30px;
+  color: #fff;
+  font-family: 'Cookie', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
 }
 
 footer i {
   font-size: 30px;
+}
+
+.mobile-col {
+  display: none;
+}
+
+.desktop-col {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .centered-content {
+    width: 400px;
+  }
+
+  .business, .influencer, .signup {
+    text-align: center;
+  }
+
+  img {
+    width: 400px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 0;
+  }
+
+  .box p {
+    height: auto;
+  }
+
+  .mobile-col {
+    display: block;
+  }
+
+  .desktop-col {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .list-container-right {
+    margin-left: 0;
+  }
+  
+  .list-container-left {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 150px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+
+  .centered-content {
+    width: 300px;
+  }
+
+  img {
+    width: 300px;
+  }
 }

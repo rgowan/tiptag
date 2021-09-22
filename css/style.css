@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -309,6 +311,10 @@ footer i {
   }
 
   h3 {
+    font-size: 22px;
+  }
+
+  h4 {
     font-size: 18px;
   }
 

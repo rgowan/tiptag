@@ -7,14 +7,131 @@
   <title>tiptag • Earn tips from your social media tags!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="content">
-    <h1>tiptag</h1>
-    <h3>Earn tips on your social media tags!</h3>
-  </div>
+  <main>
+    <section class="home">
+      <div class="centered-content">
+        <h1>tiptag</h1>
+        <h2>Earn tips for your social media tags!</h2>
+        <h3>A brand new platform with the goal of bridging the gap between local businesses and local social media influencers.</h3>
+
+        <div class="button-container">
+          <p>Find out more</p>
+          <button class="primary">I'm a business</button>
+          <button class="primary">I'm an influencer</button>
+        </div>
+      </div>
+    </section>
+    <section class="business">
+      <div class="row">
+        <div class="col">
+          <img src="./images/business.jpeg" alt="">
+        </div>
+        <div class="col list-container-right">
+          <h2>Why use tiptag as a business</h2>
+          <ul>
+            <li>Expose your business to local influencers to bring in more customers</li>
+            <li>Achieve higher engagement rates by targeting micro/nano influencers</li>
+            <li>Avoid expensive fees from using marketing agencies</li>
+            <li>Sign up and create ads on the platform for free!</li>
+          </ul>
+        </div>
+      </div>
+      <div class="box-container row">
+        <div class="box">
+          <p>
+            <strong>3.16%</strong>
+            <br>
+            the average engagement of micro and nano-influencers on Instagram</p>
+        </div>
+        <div class="box">
+          <p>
+            <strong>1,000 - 10,000</strong>
+            <br>
+            the follower count of a nano-influencer
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            <strong>89%</strong>
+            <br>
+            say ROI from influencer marketing is comparable to or better than other marketing channels
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="influencer">
+      <div class="row">
+        <div class="col list-container-left">
+          <h2>Why use tiptag as a creator</h2>
+          <ul>
+            <li>Unlock the ability of making money through your socal media posts</li>
+            <li>Find and support local business who share the same passion as you do</li>
+            <li>Avoid the expensive cost of an agent or marketing agency</li>
+            <li>Get access to our ever growing list of businesses for just £3.99 per month</li>
+          </ul>
+        </div>
+        <div class="col">
+          <img src="./images/influencer.jpeg" alt="">
+        </div>
+      </div>
+      <div class="box-container row">
+        <div class="box">
+          <p>
+            <strong>£10 – £100</strong>
+            <br>
+            the average payment per post for a nano-influencer on Instagram</p>
+        </div>
+        <div class="box">
+          <p>
+            <strong>£20 – £200</strong>
+            <br>
+            the average payment per video for a nano-influencer on Youtube
+          </p>
+        </div>
+        <div class="box">
+          <p>
+            <strong>£5 – £25</strong>
+            <br>
+            the average payment per post for a nano-influencer on Tiktok
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="signup">
+      <h2>Delectus quibusdam hic possimus!</h2>
+
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium magnam nam, dignissimos adipisci fuga dolorem, non consequatur, eligendi quae unde in aspernatur fugiat consequuntur voluptates dicta corporis odio voluptate eius?</p>
+
+      <form>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email">
+        </div>
+
+        <div class="field">
+          <label for="interest">I'm a</label>
+          <select name="interest" id="interest">
+            <option value="">Please choose an option</option>
+            <option value="business">Business</option>
+            <option value="influencer">Influencer</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <footer>
+      <h3>tiptag</h3>
+      <a href="https://www.instagram.com/tiptag.uk/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </footer>
+  </main>
 </body>
 </html>

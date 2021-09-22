@@ -1,41 +1,158 @@
-body {
-  padding: 0;
-  margin: 0;
-  background-image: linear-gradient(-20deg, #93F9B9 0%, #1D976C 100%);
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
+* {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
-.content {
+h2, h3, p, button, li, label {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 30px;
+}
+
+h1 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 120px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+li {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.centered-content {
   position: absolute;
   left: 50%;
   top: 50%;
-  min-width: 300px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
-h1 {
+.home {
   text-align: center;
-  font-family: 'Cabin', sans-serif;
-  color: #fff;
-  font-size: 110px;
-  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  height: 100vh;
 }
 
-h3 {
-  margin-top: 10px;
+.business, .influencer, .signup {
+  padding: 0 60px;
+  margin: 100px 0;
+}
+
+.list-container-right {
+  margin-left: 60px;
+}
+
+.list-container-left {
+  margin-right: 60px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col img {
+  width: 500px;
+}
+
+.box-container {
+  margin-top: 20px;
+}
+
+.box {
+  margin: 0 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
+  align-items: center;
+}
+
+.box p {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.box p strong {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: -20px;
+}
+
+form {
+  margin: 60px auto;
+}
+
+.signup {
+  text-align: center;
+}
+
+.field {
+  margin: 10px 0;
+}
+
+.field label {
+  display: block;
+  font-weight: 600;
+}
+
+input, select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+  width: 220px;
+}
+
+footer {
+  background: #000;
+  padding: 40px 20px;
   color: #fff;
-  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer h3 {
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  font-size: 30px;
+}
+
+footer i {
+  font-size: 30px;
 }

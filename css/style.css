@@ -231,7 +231,7 @@ footer {
       #3c1053, #ad5389
     );
   
-  padding: 40px 30px;
+  padding: 20px;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -312,7 +312,7 @@ iframe {
 
 @media only screen and (max-width: 400px) {
   h1 {
-    font-size: 120px;
+    font-size: 100px;
   }
 
   h2 {
@@ -354,7 +354,7 @@ iframe {
   }
 
   footer h3 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 

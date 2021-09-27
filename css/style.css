@@ -14,14 +14,13 @@ body {
 
 main {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1000px;
   padding: 0 16px;
 }
 
 h1 {
-  font-family: 'Cookie';
-  src: url('/font/Cookie-Regular.ttf');
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+  letter-spacing: -1px;
+  font-family: 'Lobster', cursive;
   font-size: 140px;
   margin: 0;
   color: #fff;
@@ -35,7 +34,8 @@ h2, h3, h4, p, button, li, label {
 }
 
 h2 {
-   font-size: 30px;
+  letter-spacing: -0.5px;
+  font-size: 30px;
 }
 
 h3 {
@@ -93,11 +93,11 @@ button {
   width: 100%;
   height: 100vh;
 
-  background-color: #DA4453;
+  background-color: #ad5389;
   background-image:
     linear-gradient(
       to top right, 
-      #89216B, #DA4453
+      #3c1053, #ad5389
     );
 }
 
@@ -157,12 +157,10 @@ img {
 }
 
 .box p strong {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
-  font-family: 'Cookie';
-  src: url('/font/Cookie-Regular.ttf');
-  color: #DA4453;
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.1);
+  font-family: 'Lobster', cursive;
+  color: #ad5389;
 }
 
 span {
@@ -175,8 +173,7 @@ span {
 }
 
 .signup h2 {
-  font-family: 'Cookie';
-  src: url('/font/Cookie-Regular.ttf');
+  font-family: 'Lobster', cursive;
   font-size: 50px;
 }
 
@@ -191,7 +188,7 @@ span {
 }
 
 .signup a {
-  color: #ED213A;
+  color: #ad5389;
 }
 
 .field {
@@ -227,11 +224,11 @@ form button {
 }
 
 footer {
-  background-color: #DA4453;
+  background-color: #ad5389;
   background-image:
     linear-gradient(
       to top right, 
-      #89216B, #DA4453
+      #3c1053, #ad5389
     );
   
   padding: 40px 30px;
@@ -241,13 +238,12 @@ footer {
 }
 
 footer h3 {
+  letter-spacing: -1px;
   margin: 0;
   color: #fff;
-  font-family: 'Cookie';
-  src: url('/font/Cookie-Regular.ttf');
-  font-size: 40px;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
   font-weight: bold;
-  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
 }
 
 footer a {
@@ -271,7 +267,7 @@ iframe {
   width: 300px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .centered-content {
     width: 400px;
   }
@@ -359,5 +355,15 @@ iframe {
 
   footer h3 {
     font-size: 40px;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  h1 {
+    letter-spacing: -8px;
+  }
+
+  .signup h2 {
+    letter-spacing: -3px;
   }
 }
